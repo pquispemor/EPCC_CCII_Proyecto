@@ -2,11 +2,12 @@
 
 ﻿![NumCpp logo](https://github.com/pquispemor/EPCC_CCII_Proyecto/blob/main/ProyectoFinal/Fondos/IntroInforme.jpeg)
  
-# Invasion Covid: Videojuego desarrollado en C++ Implementando la biblioteca SFML (https://www.sfml-dev.org/index.php)
+# Invasión Covid: Videojuego desarrollado en C++ Implementando la biblioteca SFML (https://www.sfml-dev.org/index.php)
 
-## Autores: 
-**Paul Jesus Quispe Morocco** pquispemor@gmail.com
-
+## Autores✒️: 
+* **Paul Jesus Quispe Morocco** pquispemor@gmail.com
+## Licencia 📄:
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 **C++ Standards:**  
 [![C++14](https://img.shields.io/badge/C%2B%2B-14-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/std/the-standard)
@@ -17,9 +18,9 @@ Visual Studio: 2017, 2019, 2022
 GNU: 7.3, 10.1  
 SFML: 2.5.1
 
-## INTRODUCCION
-## OBJETIVOS
-## INSTALACION SFML
-## PRUEBAS SFML
-## DISEÑO DE SPRITES
-## CAPTURAS
+## INTRODUCCION🚀
+## OBJETIVOS📋
+## INSTALACION SFML🔧
+## PRUEBAS SFML🔩
+## DISEÑO DE SPRITES🎨
+## CAPTURAS📷
