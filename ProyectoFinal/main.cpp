@@ -16,9 +16,10 @@ int main()
     MainMenu mainMenu(window.getSize().x, window.getSize().y);
     mainJugar mJugar(window.getSize().x, window.getSize().y);
     window.setFramerateLimit(60); //* 60 fps
-    /*
+    
     //*Personaje
     Personaje nave;
+    /*
     Mascarilla masc;
     Boss1 b1;
     Minion1 m1, m2, m3, m4, m5, m6, m7, m8;
