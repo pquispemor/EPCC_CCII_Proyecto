@@ -5,7 +5,7 @@
 # Invasión Covid: Videojuego desarrollado en C++ Implementando la biblioteca SFML (https://www.sfml-dev.org/index.php)
 
 ## Autores✒️: 
-* **Paul Jesus Quispe Morocco** pquispemor@gmail.com
+* **Paul Jesus Quispe Morocco** pquispemor@unsa.edu.pe
 ## Licencia 📄:
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 ## Realizado con 🛠️:
