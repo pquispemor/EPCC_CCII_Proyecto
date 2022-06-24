@@ -16,3 +16,5 @@
 Visual Studio: 2017, 2019, 2022  
 GNU: 7.3, 10.1
 SFML: 2.5.1
+
+###Instalacion SFML
