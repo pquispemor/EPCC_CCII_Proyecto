@@ -31,7 +31,7 @@ SFML: 2.5.1
   + Crear el arte de algunos personajes usando un software y exportandolo al proyecto.
   + Se crearán las clases: Jugadores, Enemigos, Colisiones, Balas, Score, Scenario, etc.
   + Se creará la opción multijugador la cual permitirá la presencia de 2 jugadores en el escenario.
-  + Incentivar a los niños y jovenes a vacunarse.
+  + Incentivar a los jóvenes y niños a ponerse la vacuna contra el COVID-19.
 ## INSTALACION SFML🔧
 ## PRUEBAS SFML🔩
 ```C++
