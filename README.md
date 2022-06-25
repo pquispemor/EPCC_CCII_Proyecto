@@ -77,6 +77,8 @@ int main()
 
 ## CAPTURAS📷
 * **Inicio o Menu**
+
+[![Whats-App-Image-2022-06-25-at-2-08-51-AM.jpg](https://i.postimg.cc/285HY3r5/Whats-App-Image-2022-06-25-at-2-08-51-AM.jpg)](https://postimg.cc/qg9cXJtf)
 * **Controles**
 * **Creditos**
 * **Selección de jugador**
