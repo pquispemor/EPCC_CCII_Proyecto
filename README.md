@@ -27,7 +27,30 @@ SFML: 2.5.1
 ## OBJETIVOS📋
 ## INSTALACION SFML🔧
 ## PRUEBAS SFML🔩
-[![287919519-535002818414608-7517585145373636585-n.png](https://i.postimg.cc/zvdDqDHZ/287919519-535002818414608-7517585145373636585-n.png)](https://postimg.cc/JHkCqLQP)
+#include <SFML/Graphics.hpp>
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
 ## DISEÑO DE SPRITES🎨
 ## CAPTURAS📷
