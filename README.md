@@ -63,11 +63,11 @@ int main()
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
 ## DISEÑO DE SPRITES🎨: 
 * Para el diseño de Algunos Sprites como en este caso los menus se utlizo el editor de gráficos vectoriales Adobe Illustrator.
-   + Adobe illustration Controles
+   + **Adobe illustration Controles**
      [![Whats-App-Image-2022-06-24-at-11-51-49-PM.jpg](https://i.postimg.cc/zvrm4yzX/Whats-App-Image-2022-06-24-at-11-51-49-PM.jpg)](https://postimg.cc/HcBPys8f)
-   + Adobe Illustration Creditos
+   + **Adobe Illustration Creditos**
      [![Whats-App-Image-2022-06-24-at-11-51-55-PM.jpg](https://i.postimg.cc/7PMjfYP0/Whats-App-Image-2022-06-24-at-11-51-55-PM.jpg)](https://postimg.cc/hhv2Yndt)
-* Y para dar los ultimos retoques se utilizo adobe Photoshop. Es una herramienta ampliamente reconocida por su uso en la creación y edición de imágenes como gráficos.
+* **Y para dar los ultimos retoques se utilizo adobe Photoshop. Es una herramienta ampliamente reconocida por su uso en la creación y edición de imágenes como gráficos.**
 [![Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg](https://i.postimg.cc/N0HzYQPy/Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg)](https://postimg.cc/R3vRLxm9)
    
 
