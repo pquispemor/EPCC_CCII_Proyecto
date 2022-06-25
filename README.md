@@ -61,5 +61,6 @@ int main()
 }
 ```
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
-## DISEÑO DE SPRITES🎨
+## DISEÑO DE SPRITES🎨: Para el diseño de Algunos Sprites como en este caso los menus se utlizo el editor de gráficos vectoriales Adobe Illustrator.
+
 ## CAPTURAS📷
