@@ -1,38 +1,27 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
+#include <time.h>
+#include "Header\\Fase1.h"
 #include "Header\\mainMenu.h"
 #include "Header\\mainJugar.h"
-#include "Header\\Personaje.h"
-#include "Header\\Mascarilla.h"
 #include "Header\\Boss1.h"
 #include "Header\\Minion1.h"
+#include "Header\\Bala.h"
 
+using namespace std;
 using namespace sf;
 
 int main()
 {
+
+    srand(time(static_cast<unsigned>(0)));
     //!Inicializacion de la ventana
     sf::RenderWindow window(sf::VideoMode(800,600), "Invasion Covid");
     MainMenu mainMenu(window.getSize().x, window.getSize().y);
     mainJugar mJugar(window.getSize().x, window.getSize().y);
     window.setFramerateLimit(60); //* 60 fps
     
-    //*Personaje
-    Personaje nave;
-    /*
-    Mascarilla masc;
-    Boss1 b1;
-    Minion1 m1, m2, m3, m4, m5, m6, m7, m8;
-
-    m1.origen(125, 150);
-    m2.origen(300, 150);
-    m3.origen(475, 150);
-    m4.origen(650, 150);
-    m5.origen(125, 250);
-    m6.origen(300, 250);
-    m7.origen(475, 250);
-    m8.origen(650, 250);
-    */
     //* Escenario Menu
 
     sf::Sprite menu;
@@ -61,13 +50,13 @@ int main()
     MCreditos_texture.loadFromFile("Fondos/Creditos.png");
     MenuCreditos.setTexture(MCreditos_texture);
 
-    //* Fondo Fase1
+    //*Audio Fase1
 
-    sf::Sprite Fase1;
-    sf::Texture Fase1_texture;
-    Fase1_texture.loadFromFile("Fondos/Fase1.jpg");
-    Fase1.setTexture(Fase1_texture);
-
+    sf::SoundBuffer fase1;
+    sf::Sound sound_fase1;
+    fase1.loadFromFile("Audio\\Fase1Theme.ogg");
+    sound_fase1.setBuffer(fase1);
+    sound_fase1.setVolume(50);
 
     //* Audio
     sf::SoundBuffer buffer;
@@ -79,8 +68,6 @@ int main()
     sf::SoundBuffer push;
     push.loadFromFile("Audio\\SpacePush.ogg");
 
-    sf::SoundBuffer fase1;
-    fase1.loadFromFile("Audio\\Fase1Theme.ogg");
 
     sf::SoundBuffer Atras;
     Atras.loadFromFile("Audio\\Atras.ogg");
@@ -97,9 +84,6 @@ int main()
     sound_move.setBuffer(move);
     sf::Sound sound_push;
     sound_push.setBuffer(push);
-    sf::Sound sound_fase1;
-    sound_fase1.setBuffer(fase1);
-    sound_fase1.setVolume(50);
     sf::Sound sound_Atras;
     sound_Atras.setBuffer(Atras);
 
@@ -161,49 +145,33 @@ int main()
                                         sound_push.play();
                                         sound.stop();
                                         int x = mJugar.MainJugarPressed();
-                                        sound_fase1.play();
                                         if (x == 0){
-                                            RenderWindow singleJugador(VideoMode(800, 600), "Invasion Covid");
-                                            while (singleJugador.isOpen()){
-                                                Event evento_singleJugador;
-                                                while (singleJugador.pollEvent(evento_singleJugador)){
-                                                    if(evento_singleJugador.type == Event::Closed){
-                                                        singleJugador.close();
-                                                    }
-                                                    if(evento_singleJugador.type == Event::KeyPressed){
-                                                        if(evento_singleJugador.key.code == Keyboard::Escape){
-                                                            singleJugador.close();
-                                                            sound_Atras.play();
-                                                            sound_fase1.stop();
-                                                            sound.play();
-                                                        }
-                                                    }
-                                                }
-                                                singleJugador.clear();
-                                                singleJugador.draw(Fase1);
-                                                singleJugador.display();
-                                            }
+                                            Fase1 fase1_juego;
+                                            sound_fase1.play();
+                                            fase1_juego.run();
+                                            sound_fase1.stop();
                                         }
-
+                                        sound.play();                                 
                                         if (x == 1){
                                             RenderWindow multiJugador(VideoMode(800, 600), "Invasion Covid");
+                                            multiJugador.setFramerateLimit(60); //* 60 fps
                                             while (multiJugador.isOpen()){
                                                 Event evento;
                                                 while (multiJugador.pollEvent(evento)){
                                                     if(evento.type == Event::Closed){
                                                         multiJugador.close();
+                                                        sound_Atras.play();
+                                                        sound.play();
                                                     }
                                                     if(evento.type == Event::KeyPressed){
                                                         if(evento.key.code == Keyboard::Escape){
                                                             multiJugador.close();
                                                             sound_Atras.play();
-                                                            sound_fase1.stop();
                                                             sound.play();
                                                         }
                                                     }
                                                 }
                                                 multiJugador.clear();
-                                                multiJugador.draw(Fase1);
                                                 multiJugador.display();
                                             }
                                         }
@@ -269,26 +237,11 @@ int main()
         //*CMD - Comandos Joy
 
         //* Update - Actualiza los estados del juego
-        //nave.update();
-        //masc.update();
         window.clear();
         
         //* Draw
         window.draw(menu);
         mainMenu.draw(window);
-        /*
-        window.draw(nave);
-        window.draw(masc);
-        window.draw(b1);
-        window.draw(m1);
-        window.draw(m2);
-        window.draw(m3);
-        window.draw(m4);
-        window.draw(m5);
-        window.draw(m6);
-        window.draw(m7);
-        window.draw(m8);
-        */
 
         //*DISPLAY O FLIP
 
