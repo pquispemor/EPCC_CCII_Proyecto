@@ -89,4 +89,6 @@ int main()
 
 [![Whats-App-Image-2022-06-25-at-2-10-16-AM.jpg](https://i.postimg.cc/hj69q4rX/Whats-App-Image-2022-06-25-at-2-10-16-AM.jpg)](https://postimg.cc/gXywVW1p)
 * **Juego en ejecución**
+
+
 [![Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg](https://i.postimg.cc/Df1Wzcfj/Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg)](https://postimg.cc/s1Df67h7)
