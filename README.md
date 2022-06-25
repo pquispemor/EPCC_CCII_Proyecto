@@ -25,6 +25,7 @@ SFML: 2.5.1
 
 ## INTRODUCCION🚀
 ## OBJETIVOS📋
+* **OBJETIVOS GENERALES** : Desarrollar un videojuego 2D utilizando todos los temas avanzados en el curso. El juego estará basado en Galaga videojuego matamarcianos creado en 1981. Invasión COVID tratará sobre una nave la cual peleará contra oleadas de enemigos (virus Covid) con la finalidad de salvar al mundo de este virus. También existe un potenciador que es una mascarilla la cual tiene la finalidad de crear un escudo, el cual protege al jugador durante un pequeño lapso de tiempo y también otros ítems extras.
 ## INSTALACION SFML🔧
 ## PRUEBAS SFML🔩
 ```C++
