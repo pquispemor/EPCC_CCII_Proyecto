@@ -27,6 +27,7 @@ SFML: 2.5.1
 ## OBJETIVOS📋
 ## INSTALACION SFML🔧
 ## PRUEBAS SFML🔩
+**
 #include <SFML/Graphics.hpp>
 
 int main()
@@ -51,6 +52,7 @@ int main()
 
     return 0;
 }
+**
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
 ## DISEÑO DE SPRITES🎨
 ## CAPTURAS📷
