@@ -7,6 +7,9 @@
 ## Autores✒️: 
 * **Paul Jesus Quispe Morocco** pquispemor@unsa.edu.pe
 * **Rodrigo Junior Santillana Quispe** rsantillanaq@unsa.edu.pe
+* **Joaquín Ernesto Polar Espinoza** jpolare@unsa.edu.pe
+* **Diego Alonso Zanabria Sacsi** dzanabria@unsa.edu.pe
+* **Jhonathan Clavijo Chacaltana** jclavijoc@unsa.edu.pe
 ## Licencia 📄:
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 ## Realizado con 🛠️:
@@ -21,8 +24,55 @@ GNU: 7.3, 10.1
 SFML: 2.5.1
 
 ## INTRODUCCION🚀
+* En estos tiempos post-pandemia las personas buscan adaptarse para convivir con esta nueva normalidad. Nuestro proyecto consta de un videojuego que tiene como  objetivo poder llegar a la mayor parte de la poblacion que son los niños y jovenes, para recordarles la importancia de la vacuna del COVID-19.
+
 ## OBJETIVOS📋
+* **OBJETIVOS GENERALES:** Desarrollar un videojuego 2D utilizando todos los temas avanzados en el curso. El juego estará basado en Galaga videojuego matamarcianos creado en 1981. Invasión COVID tratará sobre una nave la cual peleará contra oleadas de enemigos (virus Covid) con la finalidad de salvar al mundo de este virus. También existe un potenciador que es una mascarilla la cual tiene la finalidad de crear un escudo, el cual protege al jugador durante un pequeño lapso de tiempo y también otros ítems extras.
+* **OBJETIVOS ESPECÍFICOS:** 
+  + Se utilizará la biblioteca multimedia SFML.
+  + Crear el arte de algunos personajes usando un software y exportandolo al proyecto.
+  + Se crearán las clases: Jugadores, Enemigos, Colisiones, Balas, Score, Scenario, etc.
+  + Se creará la opción multijugador la cual permitirá la presencia de 2 jugadores en el escenario.
+  + Incentivar a los jóvenes y niños a ponerse la vacuna contra el COVID-19.
 ## INSTALACION SFML🔧
+* LINK DE REFERENCIA: https://www.sfml-dev.org/tutorials/2.5/start-vc.php
 ## PRUEBAS SFML🔩
-## DISEÑO DE SPRITES🎨
+```C++
+#include <SFML/Graphics.hpp>
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}
+```
+[![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
+## DISEÑO DE SPRITES🎨: 
+* Para el diseño de Algunos Sprites como en este caso los menus se utlizo el editor de gráficos vectoriales Adobe Illustrator.
+
+   + ***Adobe illustration Controles***
+     [![Whats-App-Image-2022-06-24-at-11-51-49-PM.jpg](https://i.postimg.cc/zvrm4yzX/Whats-App-Image-2022-06-24-at-11-51-49-PM.jpg)](https://postimg.cc/HcBPys8f)
+   + **Adobe Illustration Creditos**
+     [![Whats-App-Image-2022-06-24-at-11-51-55-PM.jpg](https://i.postimg.cc/7PMjfYP0/Whats-App-Image-2022-06-24-at-11-51-55-PM.jpg)](https://postimg.cc/hhv2Yndt)
+* **Y para dar los ultimos retoques se utilizo adobe Photoshop. Es una herramienta ampliamente reconocida por su uso en la creación y edición de imágenes como gráficos.**
+[![Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg](https://i.postimg.cc/N0HzYQPy/Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg)](https://postimg.cc/R3vRLxm9)
+   
+
 ## CAPTURAS📷
