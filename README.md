@@ -76,3 +76,8 @@ int main()
    
 
 ## CAPTURAS📷
+* Inicio o Menu
+* Controles
+* Creditos
+* Selección de jugador
+* Juego en ejecución
