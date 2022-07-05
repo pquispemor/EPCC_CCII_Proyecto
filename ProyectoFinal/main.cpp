@@ -51,16 +51,15 @@ int main()
     MenuCreditos.setTexture(MCreditos_texture);
 
     //*Audio Fase1
-
-    sf::SoundBuffer fase1;
-    sf::Sound sound_fase1;
-    fase1.loadFromFile("Audio\\Fase1Theme.ogg");
-    sound_fase1.setBuffer(fase1);
-    sound_fase1.setVolume(50);
+    
+    sf::SoundBuffer m1;
+    sf::Sound sound_m1;
+    m1.loadFromFile("Audio\\Fase1-Batalla.ogg");
+    sound_m1.setBuffer(m1);
 
     //* Audio
     sf::SoundBuffer buffer;
-    buffer.loadFromFile("Audio\\BombeIntro.ogg");
+    buffer.loadFromFile("Audio\\intro2-Kirby.ogg");
 
     sf::SoundBuffer move;
     move.loadFromFile("Audio\\PushInicio.ogg");
@@ -147,9 +146,8 @@ int main()
                                         int x = mJugar.MainJugarPressed();
                                         if (x == 0){
                                             Fase1 fase1_juego;
-                                            sound_fase1.play();
+                                            sound_m1.play();
                                             fase1_juego.run();
-                                            sound_fase1.stop();
                                         }
                                         sound.play();                                 
                                         if (x == 1){

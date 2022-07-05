@@ -6,6 +6,7 @@
 class Minion1: public sf::Drawable
 {
 private:
+    unsigned conteoPuntos;
     sf::Sprite sprite;
     sf::Texture texture;
     int tipo;
@@ -15,8 +16,8 @@ private:
     int danio;
     int puntos;
 
-    void iniciarForma();
     void iniciarVariables();
+    void iniciarForma();
 
 public:
     Minion1(float pos_x, float pos_y);
@@ -24,23 +25,26 @@ public:
 
     //*Accesorio
     const sf::FloatRect getLimites() const;
+    const int& getPuntos() const;
 
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 };
 
-void Minion1::iniciarForma(){
-    this->texture.loadFromFile("Sprites\\Minion1.png");
-    this->sprite.setTexture(this->texture);
-}
 
 void Minion1::iniciarVariables(){
+    this->conteoPuntos = 50;
     this->tipo = 0;
     this->velocidad = 5.f;
     this->hpMax = 10;
     this->hp = 0;
     this->danio = 1;
-    this->puntos = 5;
+    this->puntos = 50;
+}
+
+void Minion1::iniciarForma(){
+    this->texture.loadFromFile("Sprites\\Minion1.png");
+    this->sprite.setTexture(this->texture);
 }
 
 Minion1::Minion1(float pos_x, float pos_y)
@@ -59,6 +63,10 @@ Minion1::~Minion1()
 
 const sf::FloatRect Minion1::getLimites() const{
     return this->sprite.getGlobalBounds();
+}
+
+const int & Minion1::getPuntos() const{
+    return this->puntos;
 }
 
 void Minion1::update(){

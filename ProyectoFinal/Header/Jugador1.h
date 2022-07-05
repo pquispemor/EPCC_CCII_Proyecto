@@ -15,6 +15,9 @@ private:
     float ataqueTiempo;
     float ataqueTiempoMax;
 
+    int hp;
+    int hpMax;
+
     void iniciarVariables();
 
     
@@ -25,6 +28,12 @@ public:
     //*Accesorio
     const sf::Vector2f& getPos() const;
     const sf::FloatRect getLimites() const;
+
+    //*Modificadores
+    void setPosition(const sf::Vector2f pos);
+    void setPosition(const float x, const float y);
+
+    //*Funciones
 
     void move(const float dirX, const float dirY);
     const bool puedesAtacar();
@@ -39,13 +48,16 @@ void Jugador1::iniciarVariables(){
 
     this->ataqueTiempoMax = 10.f;
     this->ataqueTiempo = this->ataqueTiempoMax;
+
+    this->hpMax = 3;
+    this->hp = this->hpMax;
 }
 
 
 Jugador1::Jugador1(/* args */)
 {
     this->iniciarVariables();
-    this->texture.loadFromFile("Sprites\\Nave1.png");
+    this->texture.loadFromFile("Sprites\\Player1.png");
     this->sprite.setTexture(this->texture);
     this->sprite.scale(0.8f, 0.8f);
     this->sprite.setPosition(sf::Vector2f(450 - sprite.getGlobalBounds().width,600 - sprite.getGlobalBounds().height ));
@@ -61,6 +73,14 @@ const sf::Vector2f& Jugador1::getPos() const{
 
 const sf::FloatRect Jugador1::getLimites() const{
     return this->sprite.getGlobalBounds();
+}
+
+void Jugador1::setPosition(const sf::Vector2f pos){
+    this->sprite.setPosition(pos);
+}
+
+void Jugador1::setPosition(const float x, const float y){
+    this->sprite.setPosition(x,y);
 }
 
 void Jugador1::move(const float dirX, const float dirY){

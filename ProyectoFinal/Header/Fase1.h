@@ -7,7 +7,10 @@
 #include "Jugador1.h"
 #include "Bala.h"
 #include "Minion1.h"
+#include "Vida.h"
 #include <iostream>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -19,20 +22,48 @@ private:
     sf::RenderWindow* window;
     sf::Sprite sprite;
     sf::Texture texture;
+    
+    sf::SoundBuffer fase1;
+    sf::Sound sound_fase1;
     sf::SoundBuffer Atras;
     sf::Sound sound_Atras;
     sf::SoundBuffer Disparo;
     sf::Sound sound_Disparo;
-    sf::SoundBuffer m1;
-    sf::Sound sound_m1;
     sf::SoundBuffer m1Dead;
     sf::Sound sound_m1Dead;
+    sf::SoundBuffer winner;
+    sf::Sound sound_win;
+    sf::SoundBuffer loser;
+    sf::Sound sound_loser;
+    sf::SoundBuffer impacto;
+    sf::Sound sound_impacto;
+
+
     //*Recursos
     map<std::string, sf::Texture*> textures;
     vector<Bala*> balas;
 
+    //*Puntos System
+    sf::Font font;
+    sf::Text Fase1Text[2];
+
+    //*Resultado Text
+    sf::Font fontResultado;
+    sf::Text DerrotaText;
+    sf::Text VictoriaText;
+
+    //*Vidas
+    int cantVidas = 3;
+    vector<Vida*> vidas;
+    bool derrota = false;
+    bool victoria = false;
+
+    //* Puntuacion
+
+    unsigned puntos;
     //*Jugador1
     Jugador1* jugador1;
+    
 
     //*Enemigos
     float tiempoSpawn;
@@ -43,8 +74,11 @@ private:
     void iniciarTexture();
     void iniciarSprite();
 
+    void iniciarVida();
+    void iniciarPuntuacion();
     void iniciarJugador1();
     void iniciarMinion1();
+    void iniciarResultado();
 
 public:
     Fase1(/* args */);
@@ -53,10 +87,14 @@ public:
 
     void updatePollEvents();
     void updateEntrada();
+    void updateCollision();
+    void updatePuntuacion();
     void updateBalas();
-    void updateMinion1yCombate();
+    void updateMinion1();
+    void updateCombate();
     void update();
     void render();
+    void renderPuntuacion();
 };
 
 void Fase1::iniciarWindow(){
@@ -65,14 +103,65 @@ void Fase1::iniciarWindow(){
 }
 
 void Fase1::iniciarTexture(){
+    this->texture.loadFromFile("Fondos\\Fase1.png");
+    sprite.setTexture(this->texture);
     this->textures["BALAS"] = new sf::Texture();
-    this->textures["BALAS"]->loadFromFile("Sprites\\Jeringa.png");
+    this->textures["BALAS"]->loadFromFile("Sprites\\DisparoPlayer1.png");
 }
+
+
+void Fase1::iniciarPuntuacion(){
+    //Cargar Fuente de Letra
+    this->puntos = 0;
+    if(!this->font.loadFromFile("Fuente/BabyMonsta.otf")){
+        cout << "No ahi una fuente aqui";
+    }
+    //*Nivel
+    Fase1Text[0].setFont(this->font);
+    Fase1Text[0].setCharacterSize(30);
+    Fase1Text[0].setFillColor(sf::Color::White);
+    Fase1Text[0].setString("1");
+    Fase1Text[0].setPosition(440,8);
+
+    //*Puntuacion
+    Fase1Text[1].setFont(this->font);
+    Fase1Text[1].setCharacterSize(30);
+    Fase1Text[1].setFillColor(sf::Color::White);
+    Fase1Text[1].setString("0");
+    Fase1Text[1].setPosition(200,8);
+
+
+}
+
+void Fase1::iniciarResultado(){
+    if(!this->fontResultado.loadFromFile("Fuente/BabyMonsta.otf")){
+        cout << "No ahi una fuente aqui";
+    }
+    DerrotaText.setFont(this->fontResultado);
+    DerrotaText.setCharacterSize(100);
+    DerrotaText.setFillColor(sf::Color::White);
+    DerrotaText.setString("Derrota");
+    DerrotaText.setPosition(this->window->getSize().x/2 - 150,this->window->getSize().y/2 - 100);
+
+    VictoriaText.setFont(this->fontResultado);
+    VictoriaText.setCharacterSize(100);
+    VictoriaText.setFillColor(sf::Color::White);
+    VictoriaText.setString("Victoria");
+    VictoriaText.setPosition(this->window->getSize().x/2 - 150,this->window->getSize().y/2 - 100);
+}
+
 
 void Fase1::iniciarJugador1(){
     this->jugador1 = new Jugador1();
 }
 
+void Fase1::iniciarVida(){
+    int d = 650;
+    for(int i=0;i<3;i++){
+        this->vidas.push_back(new Vida(d,10));
+        d+=50;
+    }
+}
 void Fase1::iniciarMinion1(){
     this->tiempoSpawnMax = 20.f;
     this->tiempoSpawn = this->tiempoSpawnMax;
@@ -82,18 +171,27 @@ Fase1::Fase1(/* args */)
 {
     this->iniciarWindow();
     this->iniciarTexture();
-    this->texture.loadFromFile("Fondos\\Fase1.jpg");
-    sprite.setTexture(this->texture);
+    fase1.loadFromFile("Audio\\Fase1-Batalla2.ogg");
+    sound_fase1.setBuffer(fase1);
+    sound_fase1.setVolume(50);
     Atras.loadFromFile("Audio\\Atras.ogg");
     sound_Atras.setBuffer(Atras);
     Disparo.loadFromFile("Audio\\Disparo.ogg");
     sound_Disparo.setBuffer(Disparo);
-    m1.loadFromFile("Audio\\minion1.ogg");
-    sound_m1.setBuffer(m1);
     m1Dead.loadFromFile("Audio\\minionDead.ogg");
     sound_m1Dead.setBuffer(m1Dead);
+    winner.loadFromFile("Audio\\Winner.ogg");
+    sound_win.setBuffer(winner);
+    loser.loadFromFile("Audio\\Loser.ogg");
+    sound_loser.setBuffer(loser);
+    impacto.loadFromFile("Audio\\ImpactoNave.ogg");
+    sound_impacto.setBuffer(impacto);
+    this->iniciarPuntuacion();
+    this->iniciarResultado();
     this->iniciarJugador1();
+    this->iniciarVida();
     this->iniciarMinion1();
+    sound_fase1.play();
 }
 
 Fase1::~Fase1()
@@ -161,6 +259,43 @@ void Fase1::updateEntrada(){
 
 }
 
+void Fase1::updatePuntuacion() {
+    std::stringstream ss;
+
+    ss << this->puntos;
+
+    this->Fase1Text[1].setString(ss.str());
+
+    if (puntos >= 500){
+        victoria = true;
+    }
+
+    //*Vidas
+
+}
+
+void Fase1::updateCollision(){
+
+    //*Colision Izquierda
+    if(this->jugador1->getLimites().left < 0.f){
+        this->jugador1->setPosition(0.f, this->jugador1->getLimites().top);
+    }
+     //*Colision Derecha
+    else if(this->jugador1->getLimites().left + this->jugador1->getLimites().width >= this->window->getSize().x){
+        this->jugador1->setPosition(this->window->getSize().x - this->jugador1->getLimites().width, this->jugador1->getLimites().top);
+    }
+    //*Colision Arriba
+    if(this->jugador1->getLimites().top < 0.f){
+        this->jugador1->setPosition(this->jugador1->getLimites().left, 0.f);
+    }
+    
+    //*Colision Abajo
+    else if(this->jugador1->getLimites().top + this->jugador1->getLimites().height >= this->window->getSize().y){
+        this->jugador1->setPosition(this->jugador1->getLimites().left, this->window->getSize().y - this->jugador1->getLimites().height);
+    }
+}
+
+
 void Fase1::updateBalas(){
 
     unsigned counter = 0;
@@ -168,7 +303,7 @@ void Fase1::updateBalas(){
         bala->update();
 
         //* Eliminación de balas (parte superior de la pantalla)
-        if(bala->getLimites().top + bala->getLimites().height < 0.f){
+        if(bala->getLimites().top + bala->getLimites().height < 100.f){
             //*Eliminar Bala
             delete this->balas.at(counter);
             this->balas.erase(this->balas.begin() + counter);
@@ -180,37 +315,69 @@ void Fase1::updateBalas(){
     }
 }
 
-void Fase1::updateMinion1yCombate(){
+void Fase1::updateMinion1(){
     this->tiempoSpawn += 0.5f;
     if(this->tiempoSpawn >= this->tiempoSpawnMax)
     {
-        sound_m1.play();
-        this->minions1.push_back(new Minion1(rand() % this->window->getSize().x - 20.f, -100.f));
+        this->minions1.push_back(new Minion1(rand() % this->window->getSize().x - 20.f, 50.f));
         this->tiempoSpawn = 0.f;
     }
 
-    for (int i = 0; i < this->minions1.size(); i++){
-        bool minion1_removed = false;
-        this->minions1[i]->update();
+    //*Update
+    unsigned counter = 0;
+    for (auto *minion1 : this->minions1){
+        minion1->update();
 
-        for( size_t k = 0; k < this->balas.size() && !minion1_removed; k++){
-            if (this->balas[k]->getLimites().intersects(this->minions1[i]->getLimites())){
-                this->balas.erase(this->balas.begin() + k);
+        //*Enemigos Colision con Pantalla
+        if(minion1->getLimites().top > this->window->getSize().y){
+            //*Eliminar Enemigo
+            delete this->minions1.at(counter);
+            this->minions1.erase(this->minions1.begin() + counter);
+            --counter;
+
+        }
+
+        //*Colision enemigo - Jugador
+        else if(minion1->getLimites().intersects(this->jugador1->getLimites())){
+            delete this->vidas.at(0);
+            this->vidas.erase(this->vidas.begin() + 0);
+            delete this->minions1.at(counter);
+            this->minions1.erase(this->minions1.begin() + counter);
+            --counter;
+            sound_impacto.play();
+        }
+
+        ++counter;
+    }
+    if (vidas.size() == 0) {
+        sound_loser.play();
+        derrota = true;
+    }
+    
+}
+
+void Fase1::updateCombate(){
+    for (int i = 0; i < this->minions1.size(); i++){
+
+        bool minion1_delete = false;
+        for (size_t k{0}; k < this->balas.size() && minion1_delete == false; k++){
+            if (this->minions1[i]->getLimites().intersects(this->balas[k]->getLimites())){
+
+                this->puntos += this->minions1[i]->getPuntos();
+                
+                delete this->minions1[i];
                 this->minions1.erase(this->minions1.begin() + i);
-                minion1_removed = true;
+
+                delete this->balas[k];
+                this->balas.erase(this->balas.begin() + k);
+
+
+                minion1_delete = true;
                 sound_m1Dead.play();
             }
         }
 
-        //*Eliminar enemigos cuando llegen abajo
-        if (!minion1_removed){
-            if (this->minions1[i]->getLimites().top > this->window->getSize().y){
-                this->minions1.erase(this->minions1.begin() + i);
-                minion1_removed = true;
-            }
-        }
     }
-    
 }
 
 void Fase1::update(){
@@ -220,9 +387,22 @@ void Fase1::update(){
 
     this->jugador1->update();
 
+    this->updateCollision();
+
     this->updateBalas();
 
-    this->updateMinion1yCombate();
+    if (derrota == false and victoria == false){
+        this->updateMinion1();
+    }
+    this->updateCombate();
+
+    this->updatePuntuacion();
+}
+
+void Fase1::renderPuntuacion(){
+    for (int i = 0; i < 2; ++i){
+        this->window->draw(Fase1Text[i]);
+    }
 }
 
 void Fase1::render(){
@@ -234,9 +414,22 @@ void Fase1::render(){
         this->window->draw(*bala);
     }
 
+    for (auto *vida : this->vidas){
+        this->window->draw(*vida);
+    }
+
     for (auto *minion1 : this->minions1){
         this->window->draw(*minion1);
     }
+    if (victoria == true){
+        this->window->draw(VictoriaText);
+        sound_fase1.stop();
+    }
+    if (derrota == true){
+        this->window->draw(DerrotaText);
+        sound_fase1.stop();
+    }
+    this->renderPuntuacion();
 
     this->window->display();
 
