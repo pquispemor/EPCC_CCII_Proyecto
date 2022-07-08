@@ -1,6 +1,6 @@
 # EPCC_CCII_Proyecto
 
-﻿![NumCpp logo](https://github.com/pquispemor/EPCC_CCII_Proyecto/blob/main/ProyectoFinal/Fondos/IntroInforme.jpeg)
+[![fondo.jpg](https://i.postimg.cc/P5mvJ41J/fondo.jpg)](https://postimg.cc/5X22k87W)
  
 # Invasión Covid: Videojuego desarrollado en C++ Implementando la biblioteca SFML (https://www.sfml-dev.org/index.php)
 
