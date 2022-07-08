@@ -44,7 +44,7 @@ MainMenu::~MainMenu()
 	delete this->window;
 }
 
-void MainMenu::updateEntrada()
+void MainMenu::updateEntrada()//Entrada por teclado
 {
 	if (event.type == sf::Event::KeyReleased) {
 		if (event.key.code == sf::Keyboard::W) {
