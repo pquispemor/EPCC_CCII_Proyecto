@@ -5,8 +5,9 @@ void JugadorMain::iniciarVariables() {
     this->ataqueTiempoMax = 10.f;
     this->ataqueTiempo = this->ataqueTiempoMax;
 
-    this->hpMax = 3;
-    this->hp = this->hpMax;
+    this->danio = 10;
+    this->hp = 3;
+
 }
 
 

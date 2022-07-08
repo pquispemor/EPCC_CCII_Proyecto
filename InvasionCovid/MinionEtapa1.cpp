@@ -44,3 +44,16 @@ void MinionEtapa1::update() {
 void MinionEtapa1::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(this->sprite, states);
 }
+
+std::ostream& operator<<(std::ostream& out, const MinionEtapa1& p)
+{
+    // TODO: Insertar una instrucción "return" aquí
+    out << "\n\tDATOS DEL ENEMIGO\n";
+    out << "Tipo del Enemigo : " << p.tipo << std::endl;
+    out << "Velocidad del Enemigo : " << p.velocidad << std::endl;
+    out << "Vida del Enemgio : " << p.hpMax << std::endl;
+    out << "Danio del Enemigo : " << p.danio << std::endl;
+    out << "Puntos que otorga el Enemigo : " << p.puntos << std::endl;
+
+    return out;
+}

@@ -16,8 +16,9 @@ protected:
     float ataqueTiempo;
     float ataqueTiempoMax;
 
+    int danio;
     int hp;
-    int hpMax;
+
 
     void iniciarVariables();
 

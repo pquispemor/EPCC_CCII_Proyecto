@@ -2,7 +2,7 @@
 
 void MainMenu::iniciarWindow()
 {
-	this->window = new sf::RenderWindow(sf::VideoMode(anchura, altura), "Invasion Covid");
+	this->window = new sf::RenderWindow(sf::VideoMode(anchura,altura), "Invasion Covid");
 	this->window->setFramerateLimit(60); //60 fps
 }
 
@@ -31,6 +31,7 @@ void MainMenu::iniciarAudio()
 	this->sound_Escape.setBuffer(audioEscape);
 
 }
+
 MainMenu::MainMenu()
 {
 	this->iniciarWindow();
@@ -44,7 +45,7 @@ MainMenu::~MainMenu()
 	delete this->window;
 }
 
-void MainMenu::updateEntrada()//Entrada por teclado
+void MainMenu::updateEntrada()
 {
 	if (event.type == sf::Event::KeyReleased) {
 		if (event.key.code == sf::Keyboard::W) {
@@ -106,6 +107,7 @@ void MainMenu::updateEntrada()//Entrada por teclado
 		}
 	}
 }
+
 
 void MainMenu::updatePollEvent()
 {

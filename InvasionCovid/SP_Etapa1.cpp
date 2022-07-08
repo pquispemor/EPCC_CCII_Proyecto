@@ -1,5 +1,9 @@
 #include "SP_Etapa1.h"
 
+auto eng = std::chrono::system_clock::now().time_since_epoch().count();
+std::default_random_engine gen(eng);
+std::uniform_int_distribution<> rand_digits(0, 800);
+
 void SP_Etapa1::iniciarWindow() {
     this->window = new sf::RenderWindow(sf::VideoMode(800, 600), "Fase1");
     this->window->setFramerateLimit(60);
@@ -56,6 +60,7 @@ void SP_Etapa1::iniciarResultado() {
 
 void SP_Etapa1::iniciarJugador1() {
     this->jugador1 = new Jugador1();
+    std::cout << *this->jugador1;
 }
 
 void SP_Etapa1::iniciarVida() {
@@ -77,7 +82,7 @@ SP_Etapa1::SP_Etapa1()
     fase1.loadFromFile("Audio\\Fase1-Batalla2.ogg");
     sound_fase1.setBuffer(fase1);
     sound_fase1.setVolume(50);
-    Atras.loadFromFile("Audio\\Atras.ogg");
+    Atras.loadFromFile("Audio\\EscapePush.ogg");
     sound_Atras.setBuffer(Atras);
     Disparo.loadFromFile("Audio\\Disparo.ogg");
     sound_Disparo.setBuffer(Disparo);
@@ -223,8 +228,12 @@ void SP_Etapa1::updateMinion1() {
     this->tiempoSpawn += 0.5f;
     if (this->tiempoSpawn >= this->tiempoSpawnMax)
     {
-        this->minions1.push_back(new MinionEtapa1(rand() % this->window->getSize().x - 20.f, 50.f));
+        this->minions1.push_back(new MinionEtapa1(rand_digits(gen), 50.f));
         this->tiempoSpawn = 0.f;
+    }
+    if (unaVez == 1) {
+        std::cout << *this->minions1[0];
+        unaVez++;
     }
 
     //*Update

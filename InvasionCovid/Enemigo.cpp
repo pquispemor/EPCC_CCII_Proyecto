@@ -1,8 +1,7 @@
 #include "Enemigo.h"
 
 void Enemigo::iniciarVariables() {
-    this->conteoPuntos = 50;
-    this->tipo = 0;
+    this->tipo = 1;
     this->velocidad = 5.f;
     this->hpMax = 10;
     this->hp = 0;
@@ -43,4 +42,17 @@ void Enemigo::update() {
 
 void Enemigo::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(this->sprite, states);
+}
+
+std::ostream& operator<<(std::ostream& out, const Enemigo& p)
+{
+    // TODO: Insertar una instrucción "return" aquí
+    out << "\n\tDATOS DEL ENEMIGO\n";
+    out << "Tipo del Enemigo : " << p.tipo;
+    out << "Velocidad del Enemigo : " << p.velocidad;
+    out << "Vida del Enemgio : " << p.hpMax;
+    out << "Daño del Enemigo : " << p.danio;
+    out << "Puntos que otorga el Enemigo : " << p.puntos;
+
+    return out;
 }

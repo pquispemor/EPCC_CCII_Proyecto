@@ -21,7 +21,6 @@ private:
     void iniciarForma();
 
 public:
-    //cordenadas del enemigo
     Enemigo(float pos_x, float pos_y);
     ~Enemigo();
 
@@ -31,6 +30,7 @@ public:
 
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    friend std::ostream& operator<<(std::ostream& out, const Enemigo& p);
 };
 
 #endif

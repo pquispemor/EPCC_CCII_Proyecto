@@ -5,6 +5,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include <random>
+#include <chrono>
 #include <map>
 #include <vector>
 #include "Jugador1.h"
@@ -69,6 +71,7 @@ private:
     float tiempoSpawn;
     float tiempoSpawnMax;
     std::vector<MinionEtapa1*> minions1;
+    int unaVez = 1;
 
     void iniciarWindow();
     void iniciarTexture();

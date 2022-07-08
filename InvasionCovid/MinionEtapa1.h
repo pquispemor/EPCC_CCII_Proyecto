@@ -30,6 +30,7 @@ public:
 
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    friend std::ostream& operator<<(std::ostream& out, const MinionEtapa1& p);
 };
 
 #endif
