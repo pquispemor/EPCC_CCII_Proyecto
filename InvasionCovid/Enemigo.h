@@ -21,6 +21,7 @@ private:
     void iniciarForma();
 
 public:
+    //cordenadas del enemigo
     Enemigo(float pos_x, float pos_y);
     ~Enemigo();
 
