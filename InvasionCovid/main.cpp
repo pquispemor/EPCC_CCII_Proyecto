@@ -1,9 +1,9 @@
-#include "MenuPrincipal.h"
+#include "MainMenu.h"
 
 int main()
 {
-    MenuPrincipal menuPrincipal;
-    menuPrincipal.run();
+    MainMenu mainMenu;
+    mainMenu.run();
 
 
     return 0;
