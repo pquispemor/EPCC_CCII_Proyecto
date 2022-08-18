@@ -93,4 +93,8 @@ int main()
 
 [![Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg](https://i.postimg.cc/Df1Wzcfj/Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg)](https://postimg.cc/s1Df67h7)
 
+## DIAGRAMA CODIGO
+
+![](Informacion/Diagrama Codigo - Invasion Covid.PNG)
+
 * **Fin**
