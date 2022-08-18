@@ -95,6 +95,6 @@ int main()
 
 ## DIAGRAMA CODIGO
 
-![](Informacion/Diagrama Codigo - Invasion Covid.PNG)
+<img src="Informacion/Diagrama Codigo - Invasion Covid.PNG">
 
 * **Fin**
