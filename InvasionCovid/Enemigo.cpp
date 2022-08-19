@@ -59,13 +59,13 @@ void Enemigo::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 
 std::ostream& operator<<(std::ostream& out, const Enemigo& p)
 {
-    // TODO: Insertar una instrucción "return" aquí
+    // TODO: Insertar una instrucciÃ³n "return" aquÃ­
     out << "\n\tDATOS DEL ENEMIGO\n";
-    out << "Tipo del Enemigo : " << p.tipo;
-    out << "Velocidad del Enemigo : " << p.velocidad;
-    out << "Vida del Enemgio : " << p.hpMax;
-    out << "Daño del Enemigo : " << p.danio;
-    out << "Puntos que otorga el Enemigo : " << p.puntos;
+    out << "Tipo del Enemigo : " << p.tipo << "\n";
+    out << "Velocidad del Enemigo : " << p.velocidad << "\n";
+    out << "Vida del Enemgio : " << p.hpMax << "\n";
+    out << "DaÃ±o del Enemigo : " << p.danio << "\n";
+    out << "Puntos que otorga el Enemigo : " << p.puntos << "\n";
 
     return out;
 }
