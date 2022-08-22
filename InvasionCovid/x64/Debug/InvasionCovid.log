@@ -1,1 +1,18 @@
-﻿  InvasionCovid.vcxproj -> D:\EPCC_CCII_Proyecto\InvasionCovid\x64\Debug\InvasionCovid.exe
+﻿  MainMenu.cpp
+  Multijugador.cpp
+D:\EPCC_CCII_Proyecto\InvasionCovid\Multijugador.cpp(4,31): warning C4244: 'argumento': conversión de '_Rep' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+D:\EPCC_CCII_Proyecto\InvasionCovid\Multijugador.cpp(94,52): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  UnJugador.cpp
+D:\EPCC_CCII_Proyecto\InvasionCovid\UnJugador.cpp(4,32): warning C4244: 'argumento': conversión de '_Rep' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+D:\EPCC_CCII_Proyecto\InvasionCovid\UnJugador.cpp(71,57): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  main.cpp
+  Generando código...
+  InvasionCovid.vcxproj -> D:\EPCC_CCII_Proyecto\InvasionCovid\x64\Debug\InvasionCovid.exe
