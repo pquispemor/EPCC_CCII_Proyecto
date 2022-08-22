@@ -102,20 +102,35 @@ int main()
  * ***EJECUTAR PROYECTO***
    + Abrimos VISUAL STUDIO
    + Una vez abierto le damos en 
+   
      [![6213ae93-8ec9-4dcc-8379-5d819fbe640f.jpg](https://i.postimg.cc/jjsGRGMM/6213ae93-8ec9-4dcc-8379-5d819fbe640f.jpg)](https://postimg.cc/bZB6TFcn)
+     
    + Buscamos la ruta del archivo que anteriormente descomprimido 
+   
      [![613ecaec-46b2-4733-8e5d-2cd4183ec1b2.jpg](https://i.postimg.cc/fyhPgpS7/613ecaec-46b2-4733-8e5d-2cd4183ec1b2.jpg)](https://postimg.cc/mz8VPdwh)
+     
    + Entramos en el archivo
+   
      [![1bb46b0c-371c-4be0-818b-b1bfec3d47d2.jpg](https://i.postimg.cc/6qwHhZFY/1bb46b0c-371c-4be0-818b-b1bfec3d47d2.jpg)](https://postimg.cc/8JKBp7p6)
+     
    + Le damos a InvasionCovid
+   
      [![784970bd-bb83-4b38-906a-04c0dc8b00d9.jpg](https://i.postimg.cc/JztpKMdV/784970bd-bb83-4b38-906a-04c0dc8b00d9.jpg)](https://postimg.cc/87QdzQSt)
+     
    + Le damos al archivo de nombre “InvasionCovid.sln” y empezara a abrir el proyecto
+   
      [![1d0b13ec-be4f-46b6-a05a-0482b65cc07d.jpg](https://i.postimg.cc/d1R6D1Dd/1d0b13ec-be4f-46b6-a05a-0482b65cc07d.jpg)](https://postimg.cc/phTz6PfX)
+     
    + Le damos en 
+   
      [![010502b1-80e8-4ed7-a820-a00cd1351b16.jpg](https://i.postimg.cc/prXfTJwb/010502b1-80e8-4ed7-a820-a00cd1351b16.jpg)](https://postimg.cc/1n2n7wRJ)
+     
    + Y finalmente se ejecutara el proyecto
+   
      [![0463c7e7-0ae4-4b52-bd6d-8bfd420f319d.jpg](https://i.postimg.cc/sfNQ7zSZ/0463c7e7-0ae4-4b52-bd6d-8bfd420f319d.jpg)](https://postimg.cc/F10HX2T9)
+     
    + PDT: Estos son los controles principales del proyecto para moverse en el menú (W,A,S,D) y para ingresar (Espacio).
+   
      [![2efc56f8-e44b-4b13-b676-ff164cfb5a72.jpg](https://i.postimg.cc/4y9JpDkz/2efc56f8-e44b-4b13-b676-ff164cfb5a72.jpg)](https://postimg.cc/LgmKp0sX)
      
 
