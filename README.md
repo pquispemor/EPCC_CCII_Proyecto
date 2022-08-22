@@ -86,10 +86,15 @@ int main()
   + Ingresamos al enlace: https://github.com/pquispemor/EPCC_CCII_Proyecto
   + Descargamos el proyecto:
     [![d36efc39-8492-47f1-b1b8-e6261318ffc0.jpg](https://i.postimg.cc/SxQrRkpY/d36efc39-8492-47f1-b1b8-e6261318ffc0.jpg)](https://postimg.cc/gn5RB9jG)
+    
   + Una vez descargado
+
     [![d0a73490-9a2e-46a7-9c03-a3bbe91d1f9c.jpg](https://i.postimg.cc/rFMGZMsZ/d0a73490-9a2e-46a7-9c03-a3bbe91d1f9c.jpg)](https://postimg.cc/fkq0J4xY)
+    
   + Descomprimir 
+
     [![7f842711-a5d8-4884-b957-3a459106e745.jpg](https://i.postimg.cc/mk2DMXZj/7f842711-a5d8-4884-b957-3a459106e745.jpg)](https://postimg.cc/zb68YkgH)
+    
     [![17320cc4-ac41-434d-ae34-0bd3651f7f86.jpg](https://i.postimg.cc/C1JMFGCq/17320cc4-ac41-434d-ae34-0bd3651f7f86.jpg)](https://postimg.cc/Q99ZmWy8)
  
  * ***EJECUTAR PROYECTO***
