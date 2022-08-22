@@ -78,13 +78,15 @@ int main()
 * ***DESCARGAR VISUAL STUDIO(Si tienes VISUAL STUDIO saltar este paso)***
   + Enlace de descarga: https://visualstudio.microsoft.com/es/vs/community/
   + Una vez instalado, asegurarse haber instalado “Desarrollo para el escritorio con C++”
+  
     [![671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg](https://i.postimg.cc/WznN1MMZ/671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg)](https://postimg.cc/648JH4b6)
 
-[![b0119efc-e368-4802-805d-7778c310b632.jpg](https://i.postimg.cc/MZr3hck3/b0119efc-e368-4802-805d-7778c310b632.jpg)](https://postimg.cc/yWcTR880)
+    [![b0119efc-e368-4802-805d-7778c310b632.jpg](https://i.postimg.cc/MZr3hck3/b0119efc-e368-4802-805d-7778c310b632.jpg)](https://postimg.cc/yWcTR880)
 
 * ***DESCARGAR PROYECTO***
   + Ingresamos al enlace: https://github.com/pquispemor/EPCC_CCII_Proyecto
   + Descargamos el proyecto:
+  
     [![d36efc39-8492-47f1-b1b8-e6261318ffc0.jpg](https://i.postimg.cc/SxQrRkpY/d36efc39-8492-47f1-b1b8-e6261318ffc0.jpg)](https://postimg.cc/gn5RB9jG)
     
   + Una vez descargado
