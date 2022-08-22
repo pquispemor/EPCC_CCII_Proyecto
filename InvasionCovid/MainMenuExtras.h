@@ -23,7 +23,7 @@ public:
     void MoverAbajo();
     //Guarda la seleccion
     int MainMenuPressed();
-    //recibe (ventana-estado) y es constante
+    //recibe ventana-estado y es constante
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 };
