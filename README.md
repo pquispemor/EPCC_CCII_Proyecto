@@ -80,6 +80,9 @@ int main()
   + Una vez instalado, asegurarse haber instalado “Desarrollo para el escritorio con C++”
     [![671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg](https://i.postimg.cc/WznN1MMZ/671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg)](https://postimg.cc/648JH4b6)
 
+[![b0119efc-e368-4802-805d-7778c310b632.jpg](https://i.postimg.cc/MZr3hck3/b0119efc-e368-4802-805d-7778c310b632.jpg)](https://postimg.cc/yWcTR880)
+
+
 ## CAPTURAS📷
 * **Inicio o Menu**
 
