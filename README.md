@@ -76,6 +76,7 @@ int main()
    
 ## MANUAL DE INSTALACIÓN DEL PPROYECTO
 * ***DESCARGAR VISUAL STUDIO(Si tienes VISUAL STUDIO saltar este paso)***
+* + Enlace de descarga: https://visualstudio.microsoft.com/es/vs/community/
 
 ## CAPTURAS📷
 * **Inicio o Menu**
