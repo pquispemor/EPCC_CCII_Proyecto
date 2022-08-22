@@ -74,7 +74,7 @@ int main()
 * **Y para dar los ultimos retoques se utilizo adobe Photoshop. Es una herramienta ampliamente reconocida por su uso en la creación y edición de imágenes como gráficos.**
 [![Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg](https://i.postimg.cc/N0HzYQPy/Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg)](https://postimg.cc/R3vRLxm9)
    
-##MANUAL DE INSTALACIÓN DEL PPROYECTO
+## MANUAL DE INSTALACIÓN DEL PPROYECTO
 
 ## CAPTURAS📷
 * **Inicio o Menu**
