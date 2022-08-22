@@ -78,7 +78,7 @@ int main()
 * ***DESCARGAR VISUAL STUDIO(Si tienes VISUAL STUDIO saltar este paso)***
   + Enlace de descarga: https://visualstudio.microsoft.com/es/vs/community/
   + Una vez instalado, asegurarse haber instalado “Desarrollo para el escritorio con C++”
-  + [![671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg](https://i.postimg.cc/WznN1MMZ/671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg)](https://postimg.cc/648JH4b6)
+    [![671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg](https://i.postimg.cc/WznN1MMZ/671f757d-b80b-4ddb-82e0-ebebbd3140f5.jpg)](https://postimg.cc/648JH4b6)
 
 ## CAPTURAS📷
 * **Inicio o Menu**
