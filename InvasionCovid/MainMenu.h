@@ -2,13 +2,14 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 
-
+//Librerias graficas de SFML
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
+//Llamamos a la clase
 #include "MainMenuExtras.h"
 
-//Patron de Diseño Factory Method
+//Patron de DiseÃ±o Factory Method
 #include "MenuFactory.h" 
 #include "Menu.h"
 
@@ -54,7 +55,7 @@ private:
 	//MainMenu Otras Ventanas
 	int Ventana = 0;
 
-	//Patron de Diseño Factory Method
+	//Patron de DiseÃ±o Factory Method
 	MenuFactory menuFactory;
 	Menu* menuSeleccionado;
 
