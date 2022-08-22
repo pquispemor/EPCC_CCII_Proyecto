@@ -2,7 +2,7 @@
 
 void JuegoPrincipal::iniciarWindow()
 {
-    this->window = new sf::RenderWindow(sf::VideoMode(anchura, altura), "Un Jugador");
+    this->window = new sf::RenderWindow(sf::VideoMode(anchura, altura), "Juego");
     this->window->setFramerateLimit(fps);
 }
 
