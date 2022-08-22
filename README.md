@@ -75,6 +75,7 @@ int main()
 [![Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg](https://i.postimg.cc/N0HzYQPy/Whats-App-Image-2022-06-24-at-11-51-59-PM.jpg)](https://postimg.cc/R3vRLxm9)
    
 ## MANUAL DE INSTALACIÓN DEL PPROYECTO
+* ***DESCARGAR VISUAL STUDIO(Si tienes VISUAL STUDIO saltar este paso)***
 
 ## CAPTURAS📷
 * **Inicio o Menu**
