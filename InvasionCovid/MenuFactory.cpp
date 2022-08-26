@@ -18,3 +18,5 @@ Menu* MenuFactory::getMenu(int opcion)
 
 	return menu;
 }
+/*Este es Factory Method ya que existe una clase Fábrica que se encarga de crear a otras
+solo cuando sea necesario.*/
