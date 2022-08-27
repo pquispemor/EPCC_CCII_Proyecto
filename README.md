@@ -33,6 +33,7 @@ SFML: 2.5.1
   + Se crearán las clases: Jugadores, Enemigos, Colisiones, Balas, Score, Scenario, etc.
   + Se creará la opción multijugador la cual permitirá la presencia de 2 jugadores en el escenario.
   + Incentivar a los jóvenes y niños a ponerse la vacuna contra el COVID-19.
+  * **OBJETIVOS ALCANZADOS:** Se pudo desarrollar con éxito el Juego 2D utilizando gran parte de los temas enseñados en el curso, aunque hubiera sido ideal abordarlos todos en mayor o menor medida, también aplicando la modalidad multijugador que nos permite jugar de manera local junto con otro usuario, se espera que la posible publicación futura del juego, cumpla el objetivo de incentivar a los jóvenes y niños sobre la vacunación contra el COVID-19.
 ## INSTALACION SFML🔧
 * LINK DE REFERENCIA: https://www.sfml-dev.org/tutorials/2.5/start-vc.php
 ## PRUEBAS SFML🔩
