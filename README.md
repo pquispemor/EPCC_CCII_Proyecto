@@ -36,6 +36,17 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
   + Se creará la opción multijugador la cual permitirá la presencia de 2 jugadores en el escenario.
   + Incentivar a los jóvenes y niños a ponerse la vacuna contra el COVID-19.
 * **OBJETIVOS ALCANZADOS:** Se pudo desarrollar con éxito el Juego 2D utilizando gran parte de los temas enseñados en el curso, aunque hubiera sido ideal abordarlos todos en mayor o menor medida, también aplicando la modalidad multijugador que nos permite jugar de manera local junto con otro usuario, se espera que la posible publicación futura del juego, cumpla el objetivo de incentivar a los jóvenes y niños sobre la vacunación contra el COVID-19.
+
+## INSTALACION VISUAL STUDIO 2022
+  + Ingresar a la página de descarga: https://visualstudio.microsoft.com/es/downloads/. Y elegir la opción de Comunidad![image](https://user-images.githubusercontent.com/66225178/187043588-b6420657-7742-4848-9714-348e4a75c096.png).
+  + Se descarga el instalador del programa, guardarlo donde mejor le convenga. ![image](https://user-images.githubusercontent.com/66225178/187043650-94e48f01-7290-4b5d-9ab6-2cd572359a8b.png)
+  + Ejecutar el instalador y esperar los procesos que se solicitan.
+  + Asegúrese de marcar la opción mostrada para la instalación: ![image](https://user-images.githubusercontent.com/66225178/187043784-d7a007e5-66ab-4821-aac5-e0c211ce6c5d.png)
+  + Esperar la instalación y una vez terminada iniciar el programa.![image](https://user-images.githubusercontent.com/66225178/187044596-057fa07c-8b81-4320-921e-bb4b0686e75f.png)
+  + Si no tiene una cuenta puede dar en “Omitir por el momento”: ![image](https://user-images.githubusercontent.com/66225178/187044627-2e0e79b9-383d-4939-a5f7-cd891296a262.png)
+  + Elija el tema que prefiera y de en “Iniciar Visual Studio”: ![image](https://user-images.githubusercontent.com/66225178/187044661-b4c044f6-2f4f-49d3-8135-6203226e0b6a.png)
+  + Ya cuenta con Visual Studio 2022.![image](https://user-images.githubusercontent.com/66225178/187044711-41f4f6b3-c419-4e6a-96b1-553ee33f249d.png)
+
 ## INSTALACION SFML🔧
 * LINK DE DESCARGA: [https://www.sfml-dev.org/tutorials/2.5/start-vc.php](https://www.sfml-dev.org/download/sfml/2.5.1/)
 * Ingresamos al siguiente link y descargamos:
@@ -122,19 +133,6 @@ int main()
 }
 ```
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
-## INSTALACION VISUAL STUDIO 2022
-  + Ingresar a la página de descarga: https://visualstudio.microsoft.com/es/downloads/. Y elegir la opción de Comunidad![image](https://user-images.githubusercontent.com/66225178/187043588-b6420657-7742-4848-9714-348e4a75c096.png).
-  + Se descarga el instalador del programa, guardarlo donde mejor le convenga. ![image](https://user-images.githubusercontent.com/66225178/187043650-94e48f01-7290-4b5d-9ab6-2cd572359a8b.png)
-  + Ejecutar el instalador y esperar los procesos que se solicitan.
-  + Asegúrese de marcar la opción mostrada para la instalación: ![image](https://user-images.githubusercontent.com/66225178/187043784-d7a007e5-66ab-4821-aac5-e0c211ce6c5d.png)
-  + Esperar la instalación y una vez terminada iniciar el programa.![image](https://user-images.githubusercontent.com/66225178/187044596-057fa07c-8b81-4320-921e-bb4b0686e75f.png)
-  + Si no tiene una cuenta puede dar en “Omitir por el momento”: ![image](https://user-images.githubusercontent.com/66225178/187044627-2e0e79b9-383d-4939-a5f7-cd891296a262.png)
-  + Elija el tema que prefiera y de en “Iniciar Visual Studio”: ![image](https://user-images.githubusercontent.com/66225178/187044661-b4c044f6-2f4f-49d3-8135-6203226e0b6a.png)
-  + Ya cuenta con Visual Studio 2022.![image](https://user-images.githubusercontent.com/66225178/187044711-41f4f6b3-c419-4e6a-96b1-553ee33f249d.png)
-
-
-
-
 
 ## DISEÑO DE SPRITES🎨: 
 * Para el diseño de Algunos Sprites como en este caso los menus se utlizo el editor de gráficos vectoriales Adobe Illustrator.
