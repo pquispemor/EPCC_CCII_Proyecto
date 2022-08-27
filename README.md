@@ -39,7 +39,7 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 ## INSTALACION SFML🔧
 * LINK DE DESCARGA: [https://www.sfml-dev.org/tutorials/2.5/start-vc.php](https://www.sfml-dev.org/download/sfml/2.5.1/)
 * 1. Ingresamos al siguiente link y descargamos:
-![](ReadmeExtras/Descargar SFML.png)
+* <img src="ReadmeExtras/Descargar SFML.png">
 ## PRUEBAS SFML🔩
 ```C++
 #include <SFML/Graphics.hpp>
