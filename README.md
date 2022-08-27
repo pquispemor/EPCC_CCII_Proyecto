@@ -152,6 +152,6 @@ int main()
 
 ## DIAGRAMA CODIGO
 
-<img src="Informacion/Diagrama Codigo - Invasion Covid.PNG">
+<img src="Informacion/Imagen.png">
 
 * **Fin**
