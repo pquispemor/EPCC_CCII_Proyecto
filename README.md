@@ -11,16 +11,18 @@
 
 ## Licencia 📄:
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-## Realizado con 🛠️:
-**C++ Standards:**  
+
+## Requisitos 🛠️:
+* Sistema Operativo : Windows 10
+* Visual Studio 2022
+* SFML: 2.5.1
+
+## C++ Standards:
+[![C++11](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++14](https://img.shields.io/badge/C%2B%2B-14-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/std/the-standard)
 
-**Compilers:**  
-Visual Studio: 2017, 2019, 2022  
-GNU: 7.3, 10.1  
-SFML: 2.5.1
 
 ## INTRODUCCION🚀
 * En estos tiempos post-pandemia las personas buscan adaptarse para convivir con esta nueva normalidad. Nuestro proyecto consta de un videojuego que tiene como  objetivo poder llegar a la mayor parte de la poblacion que son los niños y jovenes, para recordarles la importancia de la vacuna del COVID-19.
