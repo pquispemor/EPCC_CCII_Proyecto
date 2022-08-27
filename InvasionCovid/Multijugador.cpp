@@ -4,6 +4,10 @@ auto ang = std::chrono::system_clock::now().time_since_epoch().count();
 std::default_random_engine g1(ang);
 std::uniform_int_distribution<> digits(0, 750);
 
+/*La clase multijugador contiene métodos parecidos a los de clase UnJugador, solo se
+diferencian al iniciar Jugadores.
+Ya que este se encarga de iniciar a 2 jugadores.*/
+
 void Multijugador::iniciarJugadores()
 {
     this->jugador1 = new Jugador1();
@@ -48,6 +52,7 @@ Multijugador::~Multijugador()
 
 void Multijugador::updateEntrada()
 {
+    /*También al método UpdateEntrada se le añaden las teclas del segundo jugador.*/
     //Jugador 1
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
         this->jugador1->move(-1.f, 0.f);
@@ -64,9 +69,10 @@ void Multijugador::updateEntrada()
             this->jugador1->getPos().y, 0.f, -1.f, 5.f));
         sound_Disparo.play();
     }
+    
 
     //Jugador 2
-
+    /*Así como también en UpdateCombate se le agrega la colisión con el segundo jugador*/
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
         this->jugador2->move(-1.f, 0.f);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
@@ -177,7 +183,7 @@ void Multijugador::update()
 
     this->updatePuntuacion_Nivel();
 }
-
+/*Y por último se añade que se dibuje al segundo jugador.*/
 void Multijugador::render()
 {
     this->window->clear();
