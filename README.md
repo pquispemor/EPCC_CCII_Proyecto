@@ -26,8 +26,8 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 ## CONTENIDOS
 
 - [INTRODUCCION](#-introduccion)
-- [Building your first React Native app](#-building-your-first-react-native-app)
-- [Documentation](#-documentation)
+- [OBJETIVOS](#-objetivos)
+- [INSTALACION VISUAL STUDIO 2022](#-INSTALACION VISUAL STUDIO 2022)
 - [Upgrading](#-upgrading)
 - [How to Contribute](#-how-to-contribute)
 - [Code of Conduct](#code-of-conduct)
