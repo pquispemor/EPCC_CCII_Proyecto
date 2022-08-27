@@ -205,42 +205,65 @@ int main()
      
 
 ## CAPTURAS📷
-* **Inicio o Menu**
+* **Inicio**
 
-[![Whats-App-Image-2022-06-25-at-2-08-51-AM.jpg](https://i.postimg.cc/285HY3r5/Whats-App-Image-2022-06-25-at-2-08-51-AM.jpg)](https://postimg.cc/qg9cXJtf)
+<img src="ReadmeExtras/Juego1.PNG">
+
 * **Controles**
 
-[![Whats-App-Image-2022-06-25-at-2-09-23-AM.jpg](https://i.postimg.cc/m207nrrJ/Whats-App-Image-2022-06-25-at-2-09-23-AM.jpg)](https://postimg.cc/PPQLpTYQ)
+<img src="ReadmeExtras/Juego2.PNG">
+
 * **Creditos**
 
-[![Whats-App-Image-2022-06-25-at-2-09-40-AM.jpg](https://i.postimg.cc/X7Fg45t4/Whats-App-Image-2022-06-25-at-2-09-40-AM.jpg)](https://postimg.cc/w7qNk16G)
+<img src="ReadmeExtras/Juego3.PNG">
+
 * **Selección de jugador**
 
-[![Whats-App-Image-2022-06-25-at-2-10-16-AM.jpg](https://i.postimg.cc/hj69q4rX/Whats-App-Image-2022-06-25-at-2-10-16-AM.jpg)](https://postimg.cc/gXywVW1p)
-* **Juego en ejecución**
+<img src="ReadmeExtras/Juego4.PNG">
+
+* **Juego en ejecución - UN JUGADOR**
+
+<img src="ReadmeExtras/Juego5.PNG">
+
+* **Juego en ejecución - 2 JUGADORES**
+
+<img src="ReadmeExtras/Juego6.PNG">
+
+* **Juego en ejecución - Cambio de Nivel**
+
+<img src="ReadmeExtras/Juego7.PNG">
+
+* **Victoria**
+
+<img src="ReadmeExtras/Victoria.PNG">
+
+* **Derrota**
+
+<img src="ReadmeExtras/Juego8.PNG">
+
 
 
 [![Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg](https://i.postimg.cc/Df1Wzcfj/Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg)](https://postimg.cc/s1Df67h7)
 ## Clases
-  + Menu
-  + MenuFactory
-  + Menu Jugar
-  + Menu Controles
-  + Menu Creditos
-  + Un jugador
-  + Multijugador
-  + Main
-  + MainMenu
-  + MainMenuExtras
-  + Juego Principal
-  + Jugador 2
-  + Jugador Main
-  + Jugador 1
-  + Vida
-  + Enemigo
-  + Derrota
-  + Bala
-  + Victoria
+  + 1. Main
+  + 2. MainMenu
+  + 3. MainMenuExtras
+  + 4. Menu
+  + 5. MenuFactory
+  + 6. Menu Jugar
+  + 7. Menu Controles
+  + 8. Menu Creditos
+  + 9. Un jugador
+  + 10. Multijugador
+  + 11. Juego Principal
+  + 12. Jugador Main
+  + 13. Jugador 1
+  + 14. Jugador 2
+  + 15. Vida
+  + 16. Enemigo
+  + 17. Derrota
+  + 18. Bala
+  + 19. Victoria
 ## DIAGRAMA CODIGO
 <img src="Informacion/Diagrama Estructura.png">
 
