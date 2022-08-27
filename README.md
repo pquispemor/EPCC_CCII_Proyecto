@@ -151,10 +151,26 @@ int main()
 
 [![Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg](https://i.postimg.cc/Df1Wzcfj/Whats-App-Image-2022-06-25-at-2-08-14-AM.jpg)](https://postimg.cc/s1Df67h7)
 ## Clases
-
-## DIAGRAMA CODIGO
   + Menu
   + MenuFactory
+  + Menu Jugar
+  + Menu Controles
+  + Menu Creditos
+  + Un jugador
+  + Multijugador
+  + Main
+  + MainMenu
+  + MainMenuExtras
+  + Juego Principal
+  + Jugador 2
+  + Jugador Main
+  + Jugador 1
+  + Vida
+  + Enemigo
+  + Derrota
+  + Bala
+  + Victoria
+## DIAGRAMA CODIGO
 <img src="Informacion/Diagrama Estructura.png">
 
 * **Fin**
