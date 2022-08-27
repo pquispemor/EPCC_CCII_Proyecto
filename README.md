@@ -64,6 +64,9 @@ int main()
 }
 ```
 [![288469022-2215510465270664-6466190466107157851-n.png](https://i.postimg.cc/g0pCBFrv/288469022-2215510465270664-6466190466107157851-n.png)](https://postimg.cc/pm0cpSfT)
+## INSTALACION VISUAL STUDIO 2022
+  + Ingresar a la pagina de descarga: https://visualstudio.microsoft.com/es/downloads/. Y elegir la opcion de Comunidad![image](https://user-images.githubusercontent.com/66225178/187043588-b6420657-7742-4848-9714-348e4a75c096.png)
+
 ## DISEÑO DE SPRITES🎨: 
 * Para el diseño de Algunos Sprites como en este caso los menus se utlizo el editor de gráficos vectoriales Adobe Illustrator.
 
