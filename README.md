@@ -38,9 +38,61 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * **OBJETIVOS ALCANZADOS:** Se pudo desarrollar con éxito el Juego 2D utilizando gran parte de los temas enseñados en el curso, aunque hubiera sido ideal abordarlos todos en mayor o menor medida, también aplicando la modalidad multijugador que nos permite jugar de manera local junto con otro usuario, se espera que la posible publicación futura del juego, cumpla el objetivo de incentivar a los jóvenes y niños sobre la vacunación contra el COVID-19.
 ## INSTALACION SFML🔧
 * LINK DE DESCARGA: [https://www.sfml-dev.org/tutorials/2.5/start-vc.php](https://www.sfml-dev.org/download/sfml/2.5.1/)
-* 1. Ingresamos al siguiente link y descargamos:
-* 
+* Ingresamos al siguiente link y descargamos:
+
 <img src="ReadmeExtras/Descargar SFML.PNG">
+
+* Una vez descargado procedemos a extraerlo.
+
+<img src="ReadmeExtras/Extraccion.PNG">
+
+* Despues de extraerlo lo cortamos y pegamos en la carpeta del proyecto.
+
+<img src="ReadmeExtras/3.PNG">
+
+* Para realizar la configuracion en el proyecto ingresamos al Visual Studio 2022, abrimos el proyecto y nos dirigimos a sus propiedades.
+
+<img src="ReadmeExtras/4.PNG">
+
+* Una vez entremos a propiedades nos apareceda la siguiente ventana en la cual escogemos la opcion de "Todas las config."
+
+<img src="ReadmeExtras/5.PNG">
+
+* Despues nos dirigimos a C/C++, despues a general y en "Directorios de inclusión adicionales" ingresamos la direccion de la carpeta **Include**, esta
+se encuentra dentro de la carpeta SFML(esta fue copiada en la misma carpeta del proyecto en pasos anteriores).
+
+<img src="ReadmeExtras/7.PNG">
+
+* Despues nos dirigimos a vinculador, despues a general y en "Directorios de bibliotecas adicionales" ingresamos la direccion de la carpeta **Lib**, esta
+se encuentra dentro de la carpeta SFML(esta fue copiada en la misma carpeta del proyecto en pasos anteriores).
+
+<img src="ReadmeExtras/6.PNG">
+
+* Despues cambiamos la configuracion a **Release** y en Vinculador/Entrada/ en Dependencias Adicionales ingresamos los siguiente parametros: 
+- sfml-graphics.lib
+- sfml-window.lib
+- sfml-audio.lib
+- sfml-system.lib
+
+<img src="ReadmeExtras/9.PNG">
+
+* Despues cambiamos la configuracion a **Debug** y en Vinculador/Entrada/ en Dependencias Adicionales ingresamos los siguiente parametros: 
+- sfml-graphics-d.lib
+- sfml-window-d.lib
+- sfml-audio-d.lib
+- sfml-system-d.lib
+
+<img src="ReadmeExtras/8.PNG">
+
+* Por ultimo copiamos los siguiente archivos de la carpeta : .\SFML-2.5.1\bin
+
+<img src="ReadmeExtras/10.PNG">
+
+* Y los pegamos en la carpeta principal del proyecto
+
+<img src="ReadmeExtras/11.PNG">
+
+* Eso es todo ahora a disfrutar de SFML 👍.
 
 ## PRUEBAS SFML🔩
 ```C++
