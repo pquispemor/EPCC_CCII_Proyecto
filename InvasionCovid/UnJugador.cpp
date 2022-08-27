@@ -1,9 +1,10 @@
 #include "UnJugador.h"
 
+/*Dentro de esta clase encontraremos el método random*/
 auto eng = std::chrono::system_clock::now().time_since_epoch().count();
 std::default_random_engine gen(eng);
 std::uniform_int_distribution<> rand_digits(0, 750);
-
+/*La inicialización de los jugadores. Aquí se utiliza polimorfismo.*/
 void UnJugador::iniciarJugadores()
 {
     this->jugador1 = new Jugador1();
@@ -21,7 +22,8 @@ UnJugador::UnJugador()
     this->iniciarTextureFondo();
     this->iniciarAudioFase();
 }
-
+/*Encontramos un destructor que se encarga de eliminar la ventana, al jugador, las
+texturas de las balas, las balas y a los enemigos.*/
 UnJugador::~UnJugador()
 {
     delete this->window;
@@ -42,6 +44,10 @@ UnJugador::~UnJugador()
         delete i;
     }
 }
+/*Tambien tenemos el método update entrada el cual registra las teclas de movimiento y
+disparo del jugador. Este también se encarga de crear balas al presionarse la tecla
+Espacio. Tambien cuenta con una variable el cual haces que el jugador no pueda disparar
+seguido, sino que este tenga que esperar unos segundos.*/
 
 void UnJugador::updateEntrada()
 {
@@ -130,7 +136,14 @@ void UnJugador::updateEnemigo()
     }
 }
 
-
+/*Tambien encontramos el método update enemigo en donde tenemos el tiempo de
+spawn cada cuanto tiempo aparecen los enemigos, y en que coordenada aparecen.
+Tambien tenemos la actualización de enemigos que estos cambian de sprite y
+aumentan su velocidad al pasar un nivel. Este también se encarga de eliminar a los
+enemigos cuando choquen con la parte inferior de la pantalla, asi como también
+eliminarlos cuando choquen con el jugador y disminuirle una vida.
+Tenemos un método update general que se encarga de llamar a los otros métodos
+update.*/
 void UnJugador::update()
 {
     this->updatePollEvents();
@@ -148,7 +161,8 @@ void UnJugador::update()
 
     this->updatePuntuacion_Nivel();
 }
-
+/*Por ultimo encontramos el método render, el cual se encarga de dibujar a todas las
+clases.*/
 void UnJugador::render()
 {
     this->window->clear();
