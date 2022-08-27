@@ -23,7 +23,7 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/std/the-standard)
 
-## CONTENIDOS
+## CONTENIDO
 
 - [Introduccion](#introduccion)
 - [Objetivos](#objetivos)
@@ -274,7 +274,7 @@ int main()
   + 17. Derrota
   + 18. Bala
   + 19. Victoria
-## DIAGRAMA CODIGO
+## DIAGRAMA DE CODIGO
 <img src="Informacion/Diagrama Estructura.png">
 
 * **Fin**
