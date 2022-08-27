@@ -37,7 +37,9 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
   + Incentivar a los jóvenes y niños a ponerse la vacuna contra el COVID-19.
 * **OBJETIVOS ALCANZADOS:** Se pudo desarrollar con éxito el Juego 2D utilizando gran parte de los temas enseñados en el curso, aunque hubiera sido ideal abordarlos todos en mayor o menor medida, también aplicando la modalidad multijugador que nos permite jugar de manera local junto con otro usuario, se espera que la posible publicación futura del juego, cumpla el objetivo de incentivar a los jóvenes y niños sobre la vacunación contra el COVID-19.
 ## INSTALACION SFML🔧
-* LINK DE REFERENCIA: https://www.sfml-dev.org/tutorials/2.5/start-vc.php
+* LINK DE DESCARGA: [https://www.sfml-dev.org/tutorials/2.5/start-vc.php](https://www.sfml-dev.org/download/sfml/2.5.1/)
+* 1. Ingresamos al siguiente link y descargamos:
+![](ReadmeExtras/Descargar SFML.png)
 ## PRUEBAS SFML🔩
 ```C++
 #include <SFML/Graphics.hpp>
