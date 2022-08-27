@@ -25,13 +25,16 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 ## CONTENIDOS
 
-- [INTRODUCCION](#-introduccion)
-- [OBJETIVOS](#-objetivos)
-- [INSTALACION VISUAL STUDIO 2022](#-INSTALACION VISUAL STUDIO 2022)
-- [Upgrading](#-upgrading)
-- [How to Contribute](#-how-to-contribute)
-- [Code of Conduct](#code-of-conduct)
-- [License](#-license)
+- [Introduccion](#introduccion)
+- [Objetivos](#objetivos)
+- [Instalacion Visual Studio 2022](#instalacion-visual-studio-2022)
+- [Instalacion SFML](#instalacion-sfml)
+- [Pruebas SFML](#pruebas-sfml)
+- [Diseño de Sprites](#diseño-de-sprites)
+- [Manual de Instalacion del Proyecto](#manual-de-instalación-del-pproyecto)
+- [Capturas](#capturas)
+- [Clases](#clases)
+- [Diagrama de Codigo](#diagrama-codigo)
 
 ## INTRODUCCION🚀
 * En estos tiempos post-pandemia las personas buscan adaptarse para convivir con esta nueva normalidad. Nuestro proyecto consta de un videojuego que tiene como  objetivo poder llegar a la mayor parte de la poblacion que son los niños y jovenes, para recordarles la importancia de la vacuna del COVID-19.
