@@ -7,6 +7,7 @@
 ## Autores✒️: 
 * **Paul Jesus Quispe Morocco** pquispemor@unsa.edu.pe
 * **Diego Alonso Zanabria Sacsi** dzanabria@unsa.edu.pe
+* **Joaquin Ernesto Polar Espinoza** jpolare@unsa.edu.pe
 
 ## Licencia 📄:
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
