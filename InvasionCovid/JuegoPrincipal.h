@@ -27,6 +27,11 @@
 #include "Victoria.h"
 #include "Derrota.h"
 
+
+/*Esta clase es importante ya que esta clase se encarga de heredar a las clases
+UnJugador y Multijugador. Esta clase cuenta con todas las variables necesarias para las
+clases ya mencionadas, asi como también sus métodos.*/
+
 class JuegoPrincipal
 {
 protected:
@@ -47,6 +52,10 @@ protected:
     float tiempoSpawnMax;
     std::vector<Enemigo*> enemigos;
     int unaVez = 1;
+    
+    /*Aquí encontramos variables para la ventana, para los sprites, sonidos y un tiempo de
+    aparición de enemigos así como también un vector que almacena objetos de la clase
+    Enemigo.*/
 
 
     //Variables Actualizacion Enemigos
@@ -69,7 +78,14 @@ protected:
     sf::Sound sound_enemigoDead;
     sf::SoundBuffer impacto;
     sf::Sound sound_impacto;
-
+    /*Tenemos una textura el cual se encarga de cargar las diferentes texturas de enemigos
+    al pasar de nivel.
+    También encontramos estas variables de cambio, estas sirven para que al momento de
+    que se actualize un escenario (cambio de fondo) solo se ejecute una vez, ya que todo
+    esto se encuentra dentro de un bucle que está en constante ejecución mientras la
+    ventana este abierta y si no contamos con estas variables el fondo va estar cargándose
+    una y otra vez.*/
+    
     //*Balas
     std::map<std::string, sf::Texture*> textures;
     std::vector<Bala*> balas;
@@ -91,7 +107,7 @@ protected:
     //*Resultado Text
     int ResultadoDUnaVez = 0;
     int ResultadoVUnaVez = 0;
-    //Patron de Dise�o Singleton
+    //Patron de Diseño Singleton
     Derrota* resultD = Derrota::get_derrota();
     Victoria* resultV = Victoria::get_victoria();
     bool derrota = false;
