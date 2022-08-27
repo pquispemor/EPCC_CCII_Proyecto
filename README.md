@@ -23,6 +23,15 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/std/the-standard)
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/std/the-standard)
 
+## CONTENIDOS
+
+- [INTRODUCCION](#-introduccion)
+- [Building your first React Native app](#-building-your-first-react-native-app)
+- [Documentation](#-documentation)
+- [Upgrading](#-upgrading)
+- [How to Contribute](#-how-to-contribute)
+- [Code of Conduct](#code-of-conduct)
+- [License](#-license)
 
 ## INTRODUCCION🚀
 * En estos tiempos post-pandemia las personas buscan adaptarse para convivir con esta nueva normalidad. Nuestro proyecto consta de un videojuego que tiene como  objetivo poder llegar a la mayor parte de la poblacion que son los niños y jovenes, para recordarles la importancia de la vacuna del COVID-19.
