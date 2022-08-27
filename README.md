@@ -152,6 +152,6 @@ int main()
 
 ## DIAGRAMA CODIGO
 
-<img src="Informacion/ imagen.png">
+<img src="Informacion/imagen.png">
 
 * **Fin**
