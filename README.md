@@ -281,3 +281,7 @@ int main()
 ## Video de Instalacion y Ejecucion de Software
 
 https://www.youtube.com/watch?v=tyK1FN5ZSnY
+
+## Video Exposicion del software
+
+[https://www.youtube.com/watch?v=tyK1FN5ZSnY](https://www.youtube.com/watch?v=uIG27MHUU3s)
