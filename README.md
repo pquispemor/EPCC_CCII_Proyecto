@@ -35,6 +35,7 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 - [Capturas](#capturas)
 - [Clases](#clases)
 - [Diagrama de Codigo](#diagrama-codigo)
+- [Diagrama de Codigo](#diagrama-codigo)
 
 ## INTRODUCCION🚀
 * En estos tiempos post-pandemia las personas buscan adaptarse para convivir con esta nueva normalidad. Nuestro proyecto consta de un videojuego que tiene como  objetivo poder llegar a la mayor parte de la poblacion que son los niños y jovenes, para recordarles la importancia de la vacuna del COVID-19.
@@ -277,4 +278,6 @@ int main()
 ## DIAGRAMA DE CODIGO
 <img src="Informacion/Diagrama Estructura.png">
 
-* **Fin**
+## Video de Instalacion y Ejecucion de Software
+
+https://www.youtube.com/watch?v=tyK1FN5ZSnY
