@@ -116,25 +116,21 @@ void Multijugador::updateEnemigo()
             this->textureEnemigo.loadFromFile("Sprites\\Minion2.png");
             minion1->setTexture(textureEnemigo);
             minion1->setVelocidad(8.f);
-            unaVez = 1;
         }
         if (puntos > 1000) {
             this->textureEnemigo.loadFromFile("Sprites\\Minion3.png");
             minion1->setTexture(textureEnemigo);
             minion1->setVelocidad(10.f);
-            unaVez = 1;
         }
         if (puntos > 1500) {
             this->textureEnemigo.loadFromFile("Sprites\\Minion4.png");
             minion1->setTexture(textureEnemigo);
             minion1->setVelocidad(12.f);
-            unaVez = 1;
         }
         if (puntos > 2000) {
             this->textureEnemigo.loadFromFile("Sprites\\Minion5.png");
             minion1->setTexture(textureEnemigo);
             minion1->setVelocidad(14.f);
-            unaVez = 1;
         }
 
         //*Enemigos Colision con Pantalla
